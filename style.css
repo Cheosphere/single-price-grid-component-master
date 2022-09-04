@@ -1,0 +1,217 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+/* ESTILOS CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    transition: all .35s ease-out;
+}
+
+/* ESTILOS CARD */
+.card {
+    width: 636px;
+    height: 476px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    transition: all .35s ease-out;
+}
+
+/* ESTILOS CARD ZONA SUPERIOR */
+.card_header {
+    width: 100%;
+    height: 215px;
+    padding: 2.5rem 3rem 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+    transition: all .35s ease-out;
+}
+
+.card_header_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(179, 62%, 43%);
+}
+
+.card_header_subtitle {
+    margin-top: .75rem;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: hsl(71, 73%, 54%);
+}
+
+.card_header_parag {
+    font-weight: 200;
+    font-size: 1.031rem;
+    line-height: 1.62rem;
+    color: hsl(218, 22%, 67%);
+}
+
+/* ESTILOS CARD ZONA IZQUIERDA Y DERECHA */
+.card_content_left {
+    width: 50%;
+    height: 260px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(179, 62%, 43%);
+    color: rgb(245, 245, 245);
+    border-radius: 0 0 0 8px;
+}
+
+.card_content_right {
+    width: 50%;
+    height: 260px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+    border-radius: 0 0 8px 0;
+}
+
+.card_content_left_title,
+.card_content_right_title {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 1.14rem;
+    letter-spacing: 0.01rem;
+}
+
+.card_content_left_price {
+    width: 145px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.card_content_left_price span {
+    font-weight: 200;
+    font-size: 1rem;
+    color: hsla(203, 44%, 93%, 0.708);
+}
+
+.card_content_left_text {
+    margin-top: 2px;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.01rem;
+}
+
+.card_content_left_btn {
+    width: 100%;
+    padding: .85rem;
+    margin-top: 1.6rem;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 1.031rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+    transition: all .25s ease-out;
+}
+
+.card_content_left_btn:hover {
+    color: hsl(179, 47%, 52%);
+    background-color: white;
+}
+
+.card_content_right_text {
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.003rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+
+    body {
+        height: 100%;
+        min-height: 900px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: hsl(204, 43%, 93%);
+    }
+
+    .card {
+        width: 85%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .card_header {
+        width: 100%;
+        height: 268px;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .card_header_title {
+        font-size: 1.3rem;
+    }
+    
+    .card_header_subtitle {
+        margin: 1.2rem 0;
+        font-size: 1rem;
+    }
+    
+    .card_header_parag {
+        font-size: 0.875rem;
+    }
+
+    .card_content_left {
+        width: 100%;
+        height: 228px;
+        padding: 1.5rem;
+        border-radius: 0;
+    }
+
+    .card_content_right {
+        width: 100%;
+        height: 228px;
+        padding: 1.5rem;
+        border-radius: 0 0 8px 8px;
+    }
+    
+}
