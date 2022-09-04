@@ -5,6 +5,8 @@ El desafío es desarrollar este componente de precios y lograr que se parezca lo
 - HTML
 - CSS
 
+![desktop-design](https://user-images.githubusercontent.com/112582420/188333659-66b3893c-eec8-4784-8afe-6fc7937a563f.jpg)
+
 # Guía de Estilo
 
 ## Diseño
