@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Karla', sans-serif;
-    background-color: rgb(30, 30, 30);
+    background-color: hsl(204, 43%, 93%);
     color: white;
 }
 
@@ -27,7 +27,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(204, 43%, 93%);
     transition: all .35s ease-out;
 }
 
