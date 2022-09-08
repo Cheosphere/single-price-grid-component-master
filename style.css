@@ -19,6 +19,10 @@ body {
     color: white;
 }
 
+li {
+    list-style: none;
+}
+
 /* ESTILOS CONTAINER */
 .container {
     width: 100%;
